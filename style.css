@@ -1,0 +1,217 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "Bahnschrift", monospace;
+    font-size: 14px;
+}
+
+h1{
+    font-size:3em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+header {
+    width: 100%;
+    height: 120px;
+    display: flex; /* Changed to flex for proper alignment */
+    justify-content: space-between; /* Ensures the menus are on opposite sides */
+    align-items: center;
+    background: linear-gradient(to right, rgb(30, 94, 137), rgb(85, 177, 237), rgb(30, 94, 137)); 
+    position: fixed;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between; /* Added to ensure menus are on opposite ends */
+}
+
+.menu-principal, .menu-principal2 {
+    display: flex;
+}
+
+.menu-principal li, .menu-principal2 li {
+    margin: 0px 10px;
+    list-style-type: none;
+}
+
+.menu-principal li a, .menu-principal2 li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    font-size: 1.5em;
+}
+
+    div .pozafr{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    position: fixed;
+    z-index: 100;
+    }
+
+div .pozafr {
+    display: inline-flex;
+    justify-content: center;
+}
+
+section .background-img{
+        overflow: hidden;
+}
+
+section .background-img img {
+    width: 100%;
+}
+
+.hero {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-info{
+    position: absolute;
+    top:50%;
+    color: white;
+    text-align: center;
+    font-style: italic;
+}
+
+button {
+    padding: 10px 50px;
+    margin: 10px 20px;
+    background:linear-gradient(to top, rgb(30, 94, 137), rgb(85, 177, 237)); 
+    color: white;
+    font-weight: bold;
+    border:none;
+}
+
+button:hover {
+    background: rgb(65,153,211);
+}
+
+.notificari {
+    text-align: center;
+}
+
+.notificari h3, p{
+    color:black;
+}
+
+.notificari p {
+    margin: 20px 3em;
+    text-align: justify;
+}
+
+article {
+    margin: 50px 100px;
+    display:flex;
+    flex-direction: row;
+}
+
+.img-noticia{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.info-post h2{
+    font-size: 1.5em;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.info-post p{
+    margin-left:0;
+    padding-left: 40px;
+    text-align: left;
+}
+
+.meta-tags-post{
+    display: flex;
+    flex-direction: row;
+    color: rgb(30, 94, 137);
+    font-size: 12px;
+}
+
+.meta-tags-post li{
+    padding: 0px 10px 0px 0px;
+    list-style-type: none;
+}
+
+.meta-tags-post li::after{
+    content: " / ";
+    color:#AAAAAA;
+    font-weight: bold;
+}
+
+.meta-tags-post li:nth-child(4)::after{
+    content: "";
+}
+
+footer {
+    width:100%;
+    background: linear-gradient(to right, rgb(30, 94, 137), rgb(85, 177, 237), rgb(30, 94, 137)); ;
+    color: white;
+    text-align: center;
+}
+
+.footer-form{
+    display: inline-block;
+    width: 40%;
+    padding: 0px 25px 0px 0px;
+    text-align: center;
+}
+
+.footer-form form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-form input {
+    padding: 5px 10px;
+    margin: 5px 0px;
+    background: rgb(255, 255, 255);
+    border: none;;
+}
+
+.footer-social{
+    display:inline-block;
+    width:40%;
+    padding: 0px 0px 0px 25px;
+}
+
+.footer-social h3{
+    margin-top: 21px;
+}
+
+.footer-social a{
+    text-decoration: none;
+}
+
+.footer-social i{
+    font-size: 3em;
+    padding: 5px;
+    color:white;
+}
+
+.footer-copyright{
+    margin-top: 50px;
+    padding:20px;
+    height:50px;
+    background: rgb(23, 75, 110);
+}
+
+.footer-copyright p{
+    color:white;
+}
